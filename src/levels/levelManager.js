@@ -100,6 +100,9 @@ export class LevelManager {
         this.loadAndAnimateGLB();
         
         this.instructionsElement = this._createInstructionsElement();
+        
+        // Référence vers la minimap pour les mises à jour
+        this.minimapInstance = null;
     }
 
     async initCurrentLevel() {
@@ -138,6 +141,7 @@ export class LevelManager {
         this._cleanupMessages();
         
         this.currentLevel = '2b';
+        this._updateMinimapMarkers();
         if (this.cutScenes['2b']) {
             this.cutScenes['2b'].onComplete = () => {
                 this.switchToMusic("standard");
@@ -157,6 +161,7 @@ export class LevelManager {
         
         if (this.currentLevel === 0) {
             this.currentLevel = 1;
+            this._updateMinimapMarkers();
             if (this.cutScenes[1]) {
                 this.cutScenes[1].onComplete = () => {
                     this.switchToMusic("standard");
@@ -171,6 +176,7 @@ export class LevelManager {
             }
         } else if (this.currentLevel === 1) {
             this.currentLevel = 2;
+            this._updateMinimapMarkers();
             if (this.cutScenes[2]) {
                 this.cutScenes[2].onComplete = () => {
                     this.switchToMusic("standard");
@@ -418,6 +424,7 @@ export class LevelManager {
         }
         
         this.currentLevel = levelNumber;
+        this._updateMinimapMarkers();
         
         // Si on réinitialise le niveau 5, recréer l'instance pour utiliser les checkpoints sauvegardés
         if (levelNumber === 5) {
@@ -802,5 +809,17 @@ export class LevelManager {
         }
         
         console.log("Nettoyage des véhicules terminé.");
+    }
+
+    // Méthode pour définir l'instance de la minimap
+    setMinimapInstance(minimapInstance) {
+        this.minimapInstance = minimapInstance;
+    }
+
+    // Méthode pour mettre à jour les marqueurs de la minimap
+    _updateMinimapMarkers() {
+        if (this.minimapInstance && this.minimapInstance.updateLevelMarkers) {
+            this.minimapInstance.updateLevelMarkers();
+        }
     }
 }
