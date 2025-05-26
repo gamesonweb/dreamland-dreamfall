@@ -4,7 +4,7 @@ const LEVEL_POINTS = {
     1: {
         name: "Ray le Chien",
         icon: "🐕",
-        worldPosition: { x: 0, z: 6 },
+        worldPosition: { x: -67.99, z: -4.70 }, 
         color: "#FFD700",
         description: "Trouvez Ray et devenez amis"
     },
@@ -12,21 +12,21 @@ const LEVEL_POINTS = {
         {
             name: "Banane 1",
             icon: "🍌", 
-            worldPosition: { x: 0, z: 0 },
+            worldPosition: { x: 7.30, z: 16.13 },
             color: "#FFFF00",
             description: "Banane 1/3"
         },
         {
             name: "Banane 2",
             icon: "🍌", 
-            worldPosition: { x: 0, z: 1 },
+            worldPosition: { x: -123.26, z: 11.07 },
             color: "#FFFF00",
             description: "Banane 2/3"
         },
         {
             name: "Banane 3",
             icon: "🍌", 
-            worldPosition: { x: 0, z: 2 },
+            worldPosition: { x: -39.77, z: -87.75 },
             color: "#FFFF00",
             description: "Banane 3/3"
         }
@@ -42,42 +42,42 @@ const LEVEL_POINTS = {
         {
             name: "Orbe Rouge",
             icon: "🔴",
-            worldPosition: { x: 0, z: 0 },
+            worldPosition: { x: -119.13, z: -84.04 },
             color: "#FF0000",
             description: "Orbe Rouge (1/6)"
         },
         {
             name: "Orbe Orange",
             icon: "🟠",
-            worldPosition: { x: 0, z: 1 },
+            worldPosition: { x: -82.74, z: 0.05 },
             color: "#FF8000",
             description: "Orbe Orange (2/6)"
         },
         {
             name: "Orbe Jaune",
             icon: "🟡",
-            worldPosition: { x: 0, z: 2 },
+            worldPosition: { x: -61.83, z: -32.81 },
             color: "#FFFF00",
             description: "Orbe Jaune (3/6)"
         },
         {
             name: "Orbe Vert",
             icon: "🟢",
-            worldPosition: { x: 0, z: 3 },
+            worldPosition: { x: -52.35, z: 43.03 },
             color: "#00FF00",
             description: "Orbe Vert (4/6)"
         },
         {
             name: "Orbe Bleu",
             icon: "🔵",
-            worldPosition: { x: 0, z: 4 },
+            worldPosition: { x: 8.42, z: 16.16 },
             color: "#0000FF",
             description: "Orbe Bleu (5/6)"
         },
         {
             name: "Orbe Violet",
             icon: "🟣",
-            worldPosition: { x: 0, z: 5 },
+            worldPosition: { x: -24.84, z: -48.70 },
             color: "#8000FF",
             description: "Orbe Violet (6/6)"
         }
@@ -349,6 +349,35 @@ export function setupMinimap(scene, player) {
         return zoneMarker;
     };
 
+    // Stockage des marqueurs collectés pour le niveau 3
+    let collectedLevel3Markers = new Set();
+
+    // Fonction pour supprimer un marqueur spécifique par position (pour le niveau 3)
+    const removeMarkerByPosition = (worldPosition) => {
+        const tolerance = 1; // Tolérance pour la comparaison des positions
+        
+        // Marquer cette position comme collectée
+        const positionKey = `${worldPosition.x.toFixed(2)}_${worldPosition.z.toFixed(2)}`;
+        collectedLevel3Markers.add(positionKey);
+        
+        // Supprimer le marqueur de la carte étendue s'il existe
+        if (isExpanded && expandedContainer) {
+            expandedLevelMarkers.forEach((marker, index) => {
+                const markerData = marker.dataset;
+                if (markerData && markerData.worldX && markerData.worldZ) {
+                    const markerX = parseFloat(markerData.worldX);
+                    const markerZ = parseFloat(markerData.worldZ);
+                    
+                    if (Math.abs(markerX - worldPosition.x) < tolerance && 
+                        Math.abs(markerZ - worldPosition.z) < tolerance) {
+                        marker.remove();
+                        expandedLevelMarkers.splice(index, 1);
+                    }
+                }
+            });
+        }
+    };
+
     // Fonction pour mettre à jour les positions des marqueurs de niveau
     const updateLevelMarkers = () => {
         // Obtenir le niveau actuel depuis le gestionnaire de niveau
@@ -381,7 +410,19 @@ export function setupMinimap(scene, player) {
                     const pointsToShow = Array.isArray(levelData) ? levelData : [levelData];
                     
                     pointsToShow.forEach(pointData => {
+                        // Pour le niveau 3, vérifier si ce marqueur a été collecté
+                        if (currentLevel === 3) {
+                            const positionKey = `${pointData.worldPosition.x.toFixed(2)}_${pointData.worldPosition.z.toFixed(2)}`;
+                            if (collectedLevel3Markers.has(positionKey)) {
+                                return; // Ne pas afficher ce marqueur s'il a été collecté
+                            }
+                        }
+                        
                         const marker = createLevelMarker(pointData, true);
+                        
+                        // Stocker les données de position dans le marqueur pour la suppression
+                        marker.dataset.worldX = pointData.worldPosition.x;
+                        marker.dataset.worldZ = pointData.worldPosition.z;
                         
                         // Calculer la position sur la carte étendue
                         const zoomFactor = 0.5;
@@ -672,6 +713,7 @@ export function setupMinimap(scene, player) {
         updateMinimap,
         toggleExpandedMap,
         updateLevelMarkers,
+        removeMarkerByPosition,
         dispose,
         get isExpanded() {
             return isExpanded;

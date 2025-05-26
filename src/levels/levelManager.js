@@ -43,37 +43,37 @@ export class LevelManager {
             1: {
                 title: "La Rencontre",
                 icon: "🐕",
-                text: "Trouvez Ray le chien et appuyez sur K pour en faire votre ami fidèle."
+                text: "Trouvez Ray le chien et appuyez sur K pour en faire votre ami fidèle. (Voir la map pour la position de Ray 'M')"
             },
             2: {
-                title: "Exploration",
+                title: "Explorer & Amis",
                 icon: "🍌",
-                text: "Trouvez les trois bananes et appuyez sur F à proximité de chacune pour devenir ami avec elles."
+                text: "Trouvez les trois bananes et appuyez sur F à proximité de chacune pour devenir ami avec elles. (Voir la map pour la position des bananes 'M')"
             },
             '2b': {
                 title: "Le Magicien",
                 icon: "🧙‍♂️",
-                text: "Trouvez le magicien et apprenez le pouvoir d'éliminer les ennemis."
+                text: "Trouvez le magicien et apprenez le pouvoir d'éliminer les ennemis a travers des boules de cristal. (Voir la map pour la position du magicien'M')"
             },
             3: {
-                title: "La Catastrophe",
+                title: "Paix perdue",
                 icon: "⚠️",
-                text: "La nuit tombe et les zombies apparaissent ! Survivez à l'assaut des créatures et défendez-vous."
+                text: "La reine à été kidnappée par le bigboss. Il a volé la paix de la ville en volant les couleurs. La population est en plein chaos. Trouvez les couleurs pour restaurer la paix. (Voir la map pour les couleurs 'M') "
             },
             4: {
-                title: "La Menace",
+                title: "Les Ennemis",
                 icon: "🧟",
-                text: "Combattez les hordes de zombies et éliminez-les tous pour sauver la ville."
+                text: "Le bigboss a compris que vous avez récupéré les couleurs. Il a envoyé ses collègues (les pizzas maléfiques) pour vous éliminer. Défendez-vous en tirant sur les pizzas. Clic gauche pour tirer. (Voir la map pour voir les zones de combat 'M')"
             },
             5: {
-                title: "Les Quartiers",
+                title: "Le Combat",
                 icon: "🏙️",
-                text: "Explorez les différents quartiers de la ville et trouvez votre chemin vers la fusée."
+                text: "Les pizzas sont furieux. Ils ont décidé de détruire la ville. Défendez-vous en tirant sur les pizzas. Clic gauche pour tirer. (Voir la map pour voir les zones de combat 'M'). Ensuite resistez à la tempête pour liberer la reine."
             },
             6: {
-                title: "L'Ultime Combat",
+                title: "L'Ultime Mission",
                 icon: "🚀",
-                text: "Atteignez la fusée et préparez-vous pour l'ultime bataille contre le boss final."
+                text: "La tempête à ravagé la ville. La reine et la population ne peuvent plus survivre dans ce monde. Construisez une fusée pour partir dans un nouveau monde dreamland. Récupérez les pièces de la fusée pour la construire. Puis Faire le puzzle pour déverrouiller la fusée. Pour cela accedez dans la zone verte "
             }
         };
         
@@ -774,10 +774,9 @@ export class LevelManager {
             this.instructionsElement.container.style.transform = "translateY(0)";
         }, 100);
         
-        // Masquer automatiquement après 10 secondes
         setTimeout(() => {
             this._hideInstructions();
-        }, 10000);
+        }, 25000);
     }
     
     _hideInstructions() {
