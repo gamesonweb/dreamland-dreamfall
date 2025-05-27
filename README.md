@@ -35,12 +35,12 @@ Voici l'ensemble de nos vidéos :
 > Tout les niveaux sont enregistrés et publiés sur Youtube.
 
 ## ⚙️ Fonctionnalités
-- Monde 3D immersif : Explorez des environnements variés avec des cycles jour/nuit et des effets météo dynamiques  
-- Système de combat : Affrontez vos ennemis à l’aide de projectiles et de mécaniques variées  
-- Système d’alliés : Recrutez des personnages amicaux pour vous aider dans votre quête  
-- Progression : Gameplay basé sur des niveaux avec des objectifs et des défis uniques  
-- Environnement dynamique : Interagissez avec des PNJ, des systèmes de circulation et une météo changeante  
-- Combats de boss : Faites face à des ennemis puissants avec des mécaniques et stratégies spécifiques  
+- **Monde 3D immersif** : Explorez des environnements variés avec des cycles jour/nuit et des effets météo dynamiques  
+- **Système de combat** : Affrontez vos ennemis à l’aide de projectiles et de mécaniques variées  
+- **Système d’alliés** : Recrutez des personnages amicaux pour vous aider dans votre quête  
+- **Progression** : Gameplay basé sur des niveaux avec des objectifs et des défis uniques  
+- **Environnement dynamique** : Interagissez avec des PNJ, des systèmes de circulation et une météo changeante  
+- **Combats de boss** : Faites face à des ennemis puissants avec des mécaniques et stratégies spécifiques  
 
 
 ## 🗺️ Niveaux du jeu
