@@ -92,14 +92,14 @@ npm run dev
 
 ## 📹 Ressources & Tutoriel vidéo
 Voici l'ensemble de nos vidéos :
-- [Level 1]([https://youtu.be/T_Fbgmi4p40](https://youtu.be/xqEyRhz6bgg?si=Y5GKklcliH2hG32n))
-- [Level 2]([https://youtu.be/CUS6Bx78IPM](https://youtu.be/HGzp4-O-2x4?si=gcUon4Uafk-jHaJV))
-- [Level 2b]([https://youtu.be/d4j3HttVcE4](https://youtu.be/7makHjATyNY?si=I4kGkyA2aZEakX_W))
-- [Level 3]([https://youtu.be/Tdp7TgrVo8I](https://youtu.be/AsiOycLtfKA?si=06is7obfa3caF9cL))
-- [Level 4]([https://youtu.be/d7kMfUK0dEk](https://youtu.be/-wW5vnw3g28?si=kIsG5TZGaD8yTlnL))
-- [Level 5]([https://youtu.be/mZAOfvDtpfE](https://youtu.be/p-ooJLaYe2c?si=7Js_dMYILtBvCIOq))
-- [Level 6]([https://youtu.be/LHLuoezAYkA](https://youtu.be/xzgNnj7J7Ig?si=DQlPYEejMvNzN34S))
-- [Gameplay complet du jeu ]([https://youtu.be/jrhd8IdCYdw](https://youtu.be/LMPR1_-Krlg?si=m8z27Ii_quaJ-ecn))
+- [Level 1](https://youtu.be/xqEyRhz6bgg?si=Y5GKklcliH2hG32n)
+- [Level 2](https://youtu.be/HGzp4-O-2x4?si=gcUon4Uafk-jHaJV)
+- [Level 2b](https://youtu.be/7makHjATyNY?si=I4kGkyA2aZEakX_W)
+- [Level 3](https://youtu.be/AsiOycLtfKA?si=06is7obfa3caF9cL)
+- [Level 4](https://youtu.be/-wW5vnw3g28?si=kIsG5TZGaD8yTlnL)
+- [Level 5](https://youtu.be/p-ooJLaYe2c?si=7Js_dMYILtBvCIOq)
+- [Level 6](https://youtu.be/xzgNnj7J7Ig?si=DQlPYEejMvNzN34S)
+- [Gameplay complet du jeu ](https://youtu.be/LMPR1_-Krlg?si=m8z27Ii_quaJ-ecn)
 
 
 
