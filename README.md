@@ -8,7 +8,7 @@ L’intégralité du code source est disponible sur un autre dépôt GitHub, le 
 
 ## 🎮 Jouer
 Le jeu est hébergé sur Vercel et [disponible ici]([https://golden-legends.github.io/golden-legends/#/](https://babylon-js-final-babygame.vercel.app)).\
-\![]()
+\![gameplay](https://github.com/user-attachments/assets/8476f2fa-0107-4a97-9f78-9e0073244a05)
 > [!NOTE]
 > Filmé sur un Mac Mini M4 2025.
 
