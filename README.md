@@ -6,11 +6,11 @@ Vous pouvez découvrir notre [trailer du jeu ](https://youtu.be/) ainsi que notr
 L’intégralité du code source est disponible sur un autre dépôt GitHub, le projet étant trop volumineux pour être hébergé ici : [GitHub - DreamFall GOW 2025 Dreamland ](https://github.com/Akira98000/babylon.js.final.babygame).
 
 ## 🎮 Jouer
-Le jeu est hébergé sur **Vercel** et est **[accessible ici](https://babylon-js-final-babygame.vercel.app)**
+Le jeu est hébergé sur **Vercel** et est **[accessible ici](https://babylon-js-final-babygame.vercel.app)** \
+\
 ![Gameplay](https://github.com/user-attachments/assets/8476f2fa-0107-4a97-9f78-9e0073244a05)
 > [!NOTE]
 > Filmé sur un Mac Mini M4 2025.
-
 
 ## 📚 À propos de nous
 Nous sommes trois étudiants en **Licence 3 MIAGE** à l’Université Nice Côte d’Azur, réunis autour d’un objectif commun : concevoir **notre tout premier jeu vidéo** dans le cadre du concours Games On Web 2025 : DreamLand.
@@ -20,8 +20,20 @@ Nous sommes trois étudiants en **Licence 3 MIAGE** à l’Université Nice Côt
 
 Bien que chacun ait des compétences distinctes, nous avons uni nos forces pour aller au-delà de nos limites et concrétiser ce projet ambitieux. Deux membres de l’équipe se sont particulièrement investis dans la création 3D avec Blender, tandis que le développement du gameplay, la gestion de projet et l’interface ont été menés en parallèle.
 
+## 📹 Ressources & Tutoriel vidéo
+Voici l'ensemble de nos vidéos :
+- [Level 1 - La rencontre](https://youtu.be/xqEyRhz6bgg?si=Y5GKklcliH2hG32n)
+- [Level 2 - Exploration ](https://youtu.be/HGzp4-O-2x4?si=gcUon4Uafk-jHaJV)
+- [Level 2b - Le Magicien ](https://youtu.be/7makHjATyNY?si=I4kGkyA2aZEakX_W)
+- [Level 3 - La Catastrophe](https://youtu.be/AsiOycLtfKA?si=06is7obfa3caF9cL)
+- [Level 4 - La Menace](https://youtu.be/-wW5vnw3g28?si=kIsG5TZGaD8yTlnL)
+- [Level 5 - Les Quartiers](https://youtu.be/p-ooJLaYe2c?si=7Js_dMYILtBvCIOq)
+- [Level 6 - L'Ultime Combat](https://youtu.be/xzgNnj7J7Ig?si=DQlPYEejMvNzN34S)
+- [Jeu - Gameplay complet](https://youtu.be/LMPR1_-Krlg?si=m8z27Ii_quaJ-ecn)
+> [!NOTE]
+> Tout les niveaux sont enregistrés et publiés sur Youtube.
 
-## Fonctionnalités
+## ⚙️ Fonctionnalités
 - Monde 3D immersif : Explorez des environnements variés avec des cycles jour/nuit et des effets météo dynamiques  
 - Système de combat : Affrontez vos ennemis à l’aide de projectiles et de mécaniques variées  
 - Système d’alliés : Recrutez des personnages amicaux pour vous aider dans votre quête  
@@ -30,7 +42,7 @@ Bien que chacun ait des compétences distinctes, nous avons uni nos forces pour 
 - Combats de boss : Faites face à des ennemis puissants avec des mécaniques et stratégies spécifiques  
 
 
-## Niveaux du jeu
+## 🗺️ Niveaux du jeu
 1. Tutoriel : Apprenez les commandes de base et les mécaniques du jeu (important de faire le tutoriel sinon les controls ne fonctionnement pas !!!)
 2. La Rencontre : Trouvez et devenez ami avec Ray le chien  
 3. Exploration : Trouvez les bananes et recrutez-les comme alliés  
@@ -40,7 +52,7 @@ Bien que chacun ait des compétences distinctes, nous avons uni nos forces pour 
 7. Le Combat Final : Ville ravagé par la tempête, il faut donc construire une fusée pour atterir sur un nouveau dreamland.
 
 
-## Contrôles
+## 🎮 Contrôles
 - Mouvement : Touches WASD / ZQSD  
 - Viser / Regarder autour : Mouvement de la souris  
 - Tirer : Bouton gauche de la souris  
@@ -48,7 +60,7 @@ Bien que chacun ait des compétences distinctes, nous avons uni nos forces pour 
 - Pause : Touche ÉCHAP  
 
 
-## Stack Technique
+## 🛠️ Stack Technique
 - Moteur : BabylonJS 7.5+  
 - Système de build : Vite  
 - Animations : GSAP  
@@ -57,31 +69,23 @@ Bien que chacun ait des compétences distinctes, nous avons uni nos forces pour 
 - Audio : WebAudio API
 
 
-## Architecture Technique
-### Systèmes principaux
+## 🧠 Architecture Technique
+### 🧩 Systèmes principaux
 - Gestion des scènes : Chargement modulaire des niveaux avec chargement progressif des assets  
 - Système de balle + tir
 - Gestion Map
 - Système d’IA [(wander + seek)](https://docs.google.com/presentation/d/1KACjUkg9xarx656LXUrwJLLHulNr8NWvjlmMHctGVtQ/edit) - Aider par Michel Buffa avec son powerpoint 
 - Utilisation des [Sequencing Animations](https://doc.babylonjs.com/features/featuresDeepDive/animation/sequenceAnimations/)
 
-### Optimisations des performances
+### 🚀 Optimisations des performances
 - Chargement des assets : Chargement asynchrone avec priorisation et mise en cache  
 - Gestion mémoire : Libération des meshes
 - Optimisation des glbs sur Blender
 - Suppression des particules inutiles
 - Reduction de la distance des caméras : 30
 
-### La v1 de notre jeu sans optimisation : 
-Lien : game-onweb.vercel.app // VIELLE VERSION POUR VOIR LA DIFFERENCE AU NIVEAU PERFORMANCE SUR LA VERSION FINAL
 
-### Lien jeu final ici :
-Lien : babylon-js-final-babygame.vercel.app
-// VERSION FINAL MAIS DES AMELIORATION SONT OBLIGATOIRE POUR LE GAMEONWEB
-// CHANGER LES TEXTE ('ANCIEN TEXTE QUI N'ONT PAS ETE MODIFIER')
-// LA MAP QUI VA ETRE UTILISER ET QUI VA DEVOIR MONTRER OU SONT LES ENNEMI, LES BANANES, LE CHIEN OU LA REINE.
-
-## Installation
+## 💾 Installation
 ```bash
 # Cloner le dépôt
 git clone https://github.com/your-username/dreamfall.git
@@ -102,29 +106,12 @@ npm install
 npm run dev
 ```
 
-## Prérequis
+## 📋 Prérequis
 - Navigateur moderne avec support WebGL (Chrome recommandé !!!!!)
 - Clavier et souris
 - Avoir un bon Ordinateur et surtout récent !
 
-
-
-## 📹 Ressources & Tutoriel vidéo
-Voici l'ensemble de nos vidéos :
-- [Level 1 - La rencontre](https://youtu.be/xqEyRhz6bgg?si=Y5GKklcliH2hG32n)
-- [Level 2 - Exploration ](https://youtu.be/HGzp4-O-2x4?si=gcUon4Uafk-jHaJV)
-- [Level 2b - Le Magicien ](https://youtu.be/7makHjATyNY?si=I4kGkyA2aZEakX_W)
-- [Level 3 - La Catastrophe](https://youtu.be/AsiOycLtfKA?si=06is7obfa3caF9cL)
-- [Level 4 - La Menace](https://youtu.be/-wW5vnw3g28?si=kIsG5TZGaD8yTlnL)
-- [Level 5 - Les Quartiers](https://youtu.be/p-ooJLaYe2c?si=7Js_dMYILtBvCIOq)
-- [Level 6 - L'Ultime Combat](https://youtu.be/xzgNnj7J7Ig?si=DQlPYEejMvNzN34S)
-- [Jeu - Gameplay complet](https://youtu.be/LMPR1_-Krlg?si=m8z27Ii_quaJ-ecn)
-> [!NOTE]
-> Tout les niveaux sont enregistrés et publiés sur Youtube.
-
-
-
-## Assets utilisé dans le jeu
+## 🧩 Assets utilisé dans le jeu
 ### Modèles GLB – Personnages
 - **Banane** : [https://poly.pizza/m/TFlEjNafR1](https://poly.pizza/m/TFlEjNafR1)  
 - **Dog** : [https://poly.pizza/m/1gXKv15ik8](https://poly.pizza/m/1gXKv15ik8)  
@@ -168,12 +155,12 @@ Voici l'ensemble de nos vidéos :
 
 
 
-### Sons utilisé dans le jeu 
+### 🔊 Sons utilisé dans le jeu 
 - **Epic War** : [https://pixabay.com/music/main-title-epic-war-background-music-333128/](https://pixabay.com/music/main-title-epic-war-background-music-333128/)  
 - **Honey Chill Lofi** : [https://pixabay.com/music/beats-honey-chill-lofi-309227/](https://pixabay.com/music/beats-honey-chill-lofi-309227/)
 
 
-### Images
+### 🖼️ Images
 Toutes les images ont été générées par **ChatGPT**.
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/tcwhlYLU)
