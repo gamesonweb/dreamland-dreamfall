@@ -1,5 +1,6 @@
 # Dreamfall
-Un jeu d'action-aventure 3D développé avec BabylonJS pour la compétition Game On Web 2025.
+![logo](https://github.com/user-attachments/assets/bb2f929a-8e14-492c-970e-cf25e826d8c2)
+
 
 ## 👋 Bienvenue
 Nous sommes trois étudiants passionnés qui participons au concours Games On Web 2025 Dreamland avec notre jeu DreamFall.\
