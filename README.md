@@ -92,14 +92,14 @@ npm run dev
 
 ## 📹 Ressources & Tutoriel vidéo
 Voici l'ensemble de nos vidéos :
-- [Level 1](https://youtu.be/xqEyRhz6bgg?si=Y5GKklcliH2hG32n)
-- [Level 2](https://youtu.be/HGzp4-O-2x4?si=gcUon4Uafk-jHaJV)
-- [Level 2b](https://youtu.be/7makHjATyNY?si=I4kGkyA2aZEakX_W)
-- [Level 3](https://youtu.be/AsiOycLtfKA?si=06is7obfa3caF9cL)
-- [Level 4](https://youtu.be/-wW5vnw3g28?si=kIsG5TZGaD8yTlnL)
-- [Level 5](https://youtu.be/p-ooJLaYe2c?si=7Js_dMYILtBvCIOq)
-- [Level 6](https://youtu.be/xzgNnj7J7Ig?si=DQlPYEejMvNzN34S)
-- [Gameplay complet du jeu ](https://youtu.be/LMPR1_-Krlg?si=m8z27Ii_quaJ-ecn)
+- [Level 1 - La rencontre](https://youtu.be/xqEyRhz6bgg?si=Y5GKklcliH2hG32n)
+- [Level 2 - Exploration ](https://youtu.be/HGzp4-O-2x4?si=gcUon4Uafk-jHaJV)
+- [Level 2b - Le Magicien ](https://youtu.be/7makHjATyNY?si=I4kGkyA2aZEakX_W)
+- [Level 3 - La Catastrophe](https://youtu.be/AsiOycLtfKA?si=06is7obfa3caF9cL)
+- [Level 4 - La Menace](https://youtu.be/-wW5vnw3g28?si=kIsG5TZGaD8yTlnL)
+- [Level 5 - Les Quartiers](https://youtu.be/p-ooJLaYe2c?si=7Js_dMYILtBvCIOq)
+- [Level 6 - L'Ultime Combat](https://youtu.be/xzgNnj7J7Ig?si=DQlPYEejMvNzN34S)
+- [Jeu - Gameplay complet](https://youtu.be/LMPR1_-Krlg?si=m8z27Ii_quaJ-ecn)
 
 
 
