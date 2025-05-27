@@ -30,7 +30,7 @@ Voici l'ensemble de nos vidéos :
 - [Level 5 - Les Quartiers](https://youtu.be/p-ooJLaYe2c?si=7Js_dMYILtBvCIOq)
 - [Level 6 - L'Ultime Combat](https://youtu.be/xzgNnj7J7Ig?si=DQlPYEejMvNzN34S)
 - [Jeu - Gameplay complet](https://youtu.be/LMPR1_-Krlg?si=m8z27Ii_quaJ-ecn)
-- [**TUTORIEL**](https://youtube.com/watch?v=2-l0QObnuMI&feature=shared](https://www.youtube.com/watch?v=2-l0QObnuMI)
+- [Tutoriel - DreamFall](https://www.youtube.com/watch?v=2-l0QObnuMI)
 > [!NOTE]
 > Tout les niveaux sont enregistrés et publiés sur Youtube.
 
