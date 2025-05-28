@@ -31,7 +31,7 @@ Voici l'ensemble de nos vidéos :
 - [Level 6 - L'Ultime Combat](https://youtu.be/xzgNnj7J7Ig?si=DQlPYEejMvNzN34S)
 - [Jeu - Gameplay complet](https://youtu.be/LMPR1_-Krlg?si=m8z27Ii_quaJ-ecn)
 - [Tutoriel - DreamFall](https://www.youtube.com/watch?v=2-l0QObnuMI)
-- [Trailer - DreamFall](https://youtu.be/2-l0QObnuMI?si=XE83-TZgsfx7zglq)]
+- [Trailer - DreamFall](https://youtu.be/2-l0QObnuMI?si=XE83-TZgsfx7zglq)
 > [!NOTE]
 > Tout les niveaux sont enregistrés et publiés sur Youtube.
 
