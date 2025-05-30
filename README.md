@@ -3,7 +3,7 @@
 ## 👋 Bienvenue
 Nous sommes trois étudiants passionnés qui participons au concours Games On Web 2025 Dreamland avec notre jeu DreamFall.\
 Vous pouvez découvrir notre [trailer du jeu ](https://youtu.be/HV0t3gquUck?si=yrQmUOUezKW-uEIp) ainsi que notre [vidéo de présentation](https://www.youtube.com/watch?v=WFWpevWfaMA).\
-L’intégralité du code source est disponible sur un autre dépôt GitHub, le projet étant trop volumineux pour être hébergé ici : [GitHub - DreamFall GOW 2025 Dreamland](https://test-game-ten.vercel.app/).
+L’intégralité du code source est disponible sur un autre dépôt GitHub, le projet étant trop volumineux pour être hébergé ici : [GitHub - DreamFall GOW 2025 Dreamland]([https://test-game-ten.vercel.app/](https://github.com/Akira98000/babylon.js.GameOnWeb2025)).
 
 ## 🎮 Jouer
 Le jeu est hébergé sur **Vercel** et est **[accessible ici](https://test-game-ten.vercel.app/)** \
