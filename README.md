@@ -6,7 +6,7 @@ Vous pouvez découvrir notre [trailer du jeu ](https://youtu.be/HV0t3gquUck?si=y
 L’intégralité du code source est disponible sur un autre dépôt GitHub, le projet étant trop volumineux pour être hébergé ici : [GitHub - DreamFall GOW 2025 Dreamland ](https://github.com/Akira98000/babylon.js.final.babygame).
 
 ## 🎮 Jouer
-Le jeu est hébergé sur **Vercel** et est **[accessible ici]([https://babylon-js-final-babygame.vercel.app](https://test-game-ten.vercel.app/))** \
+Le jeu est hébergé sur **Vercel** et est **[accessible ici](https://babylon-js-final-babygame.vercel.app](https://test-game-ten.vercel.app/)** \
 Voir le repository du jeu : **[accessible ici](https://github.com/Akira98000/babylon.js.GameOnWeb2025)**
 \
 ![Gameplay](https://github.com/user-attachments/assets/8476f2fa-0107-4a97-9f78-9e0073244a05)
