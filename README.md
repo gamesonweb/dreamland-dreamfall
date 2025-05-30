@@ -8,6 +8,7 @@ L’intégralité du code source est disponible sur un autre dépôt GitHub, le 
 ## 🎮 Jouer
 Le jeu est hébergé sur **Vercel** et est **[accessible ici](https://test-game-ten.vercel.app/)** \
 Voir le repository du jeu : **[accessible ici](https://github.com/Akira98000/babylon.js.GameOnWeb2025)**  
+Consulter notre doc technique : **[accessible ici](https://github.com/gamesonweb/dreamland-dreamfall/blob/main/point_technique.md)**  
 \
 ![Gameplay](https://github.com/user-attachments/assets/8476f2fa-0107-4a97-9f78-9e0073244a05)
 > [!NOTE]
