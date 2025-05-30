@@ -136,7 +136,7 @@ nettoyage des données non utilisées (vertex groups, modifiers appliqués).
 
 ## 8. Pistes d’évolution
 - **Support multijoueur** via WebRTC/Socket.io
-- **Version Mobile**  Commencé mais manque de temps
+- **Version Mobile**  Commencé mais manque de temps  
   ![emulatoriPhone16proMax](https://github.com/user-attachments/assets/5be8924a-bd8c-48a0-8fab-4b5c6479d3b9)
 
 
