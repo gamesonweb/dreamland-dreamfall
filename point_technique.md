@@ -1,3 +1,4 @@
+![logo](https://github.com/user-attachments/assets/ef167c65-dfe7-4fe2-8ad3-174e812d3178)  
 ## 1. Contexte et objectifs
 
 Ce projet implémente le jeu 3D en JavaScript (Babylon.js) avec :  
@@ -50,7 +51,9 @@ app.js
 - **Outils** : Blender 3.x pour la création de tous les assets 3D (map, personnages, objets, armes, éléments de décor). 
  **Intégration** : import des fichiers `.glb` via `SceneLoader.ImportMesh` dans Babylon.js, organisation en dossiers `assets/models` et `assets/textures`.  
 - **Optimisations** : réduction de la topologie, utilisation de LOD, création d’atlas de textures pour minimiser les appels GPU, 
-nettoyage des données non utilisées (vertex groups, modifiers appliqués).  
+nettoyage des données non utilisées (vertex groups, modifiers appliqués).   
+
+![blender](https://github.com/user-attachments/assets/c9ac5f70-f94b-4838-8273-052e53c9424b)   
 
 
 
@@ -119,25 +122,8 @@ nettoyage des données non utilisées (vertex groups, modifiers appliqués).
   - Objet unique `GAME_CONFIG` regroupant HERO, ENNEMIS, ARMES, etc.
 
 ## 6. Flux d’exécution
+![diagram_dreamfall](https://github.com/user-attachments/assets/fd21b675-2224-4553-9407-8b7e4fccfdc1)
 
-1. **Chargement de la page** → `initBabylon()` (app.js)  
-2. Vérification `localStorage.gameStarted`  
-   - `false` → affichage `MainMenu`  
-   - `true`  → appel direct `startGame()`  
-3. **MainMenu** → clic “Jouer”  
-   - sauvegarde `gameStarted=true`  
-   - destruction du menu → `startGame(canvas, engine)`  
-4. **startGame()**  
-   1. `LoadingScreen` visible  
-   2. Instanciation `LevelManager`  
-   3. Chargement du niveau 1 → `loadMapParts()`, `createEnvironment()`, `createPlayer()`, `setupCamera()`, `createEnvironmentParticles()`, `setupControls()`, `setupHUD()`  
-   4. Boucle de rendu Babylon.js  
-      - Mises à jour IA  
-      - Mises à jour physiques  
-      - Mises à jour UI  
-      - Effets visuels  
-      - Détection fin de niveau → `LevelManager.nextLevel()`  
-5. **Transition de niveaux** via `LevelManager` (réaffichage `LoadingScreen`)
 
 ## 7. Décisions de conception
 
@@ -149,13 +135,10 @@ nettoyage des données non utilisées (vertex groups, modifiers appliqués).
 - **Pattern Factory** via fichiers `LevelX.js` agissant comme producteurs de données
 
 ## 8. Pistes d’évolution
+- **Support multijoueur** via WebRTC/Socket.io
+- **Version Mobile**  
+  ![emulatoriPhone16proMax](https://github.com/user-attachments/assets/5be8924a-bd8c-48a0-8fab-4b5c6479d3b9)
 
-- **Système de plugins** pour nouveaux ennemis ou effets  
-- **Support multijoueur** via WebRTC/Socket.io  
-- **Éditeur de niveaux** embarqué  
-- **Lazy-loading** asynchrone de textures/sons  
-- **Tests unitaires** (Jest)  
-- **Optimisations GPU** (instancing, LOD, culling)
 
 ## 9. Conclusion
 
