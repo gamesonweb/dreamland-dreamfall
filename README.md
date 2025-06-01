@@ -16,8 +16,8 @@ Consulter notre doc technique : **[accessible ici](https://github.com/gamesonweb
 
 ## 📚 À propos de nous
 Nous sommes trois étudiants en **Licence 3 MIAGE** à l’Université Nice Côte d’Azur, réunis autour d’un objectif commun : concevoir **notre tout premier jeu vidéo** dans le cadre du concours Games On Web 2025 : DreamLand.
-- [Akira Santhakumaran](https://github.com/Akira98000) : Chef de projet, développement du code principal et modélisation 3D sous Blender..
-- [Logan Laporte](https://github.com/pzygwg) : Création de l’interface utilisateur (UI) et conception 3D avec Blender.
+- [Akira Santhakumaran](https://github.com/Akira98000) : Chef de projet, développement du code principal et modélisation 3D sous Blender + Interface utilisateur
+- [Logan Laporte](https://github.com/pzygwg) : Modélisation 3D avec Blender + Réalisation Animated Cutscene.
 - [Germain Doglioli-Ruppert](https://github.com/) : Modélisation 3D avec Blender.
 
 Bien que chacun ait des compétences distinctes, nous avons uni nos forces pour aller au-delà de nos limites et concrétiser ce projet ambitieux. Deux membres de l’équipe se sont particulièrement investis dans la création 3D avec Blender, tandis que le développement du gameplay, la gestion de projet et l’interface ont été menés en parallèle.
